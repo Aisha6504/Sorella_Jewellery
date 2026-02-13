@@ -1,0 +1,181 @@
+/* ===========================
+   GLOBAL THEME
+   =========================== */
+:root {
+    --gold: #c6a435;
+    --text-dark: #3a3a3a;
+    --text-light: #555;
+    --bg: #dcdada;
+    --white: #d6cccc;
+    --shadow-soft: 0 4px 16px rgba(0,0,0,0.08);
+    --radius: 20px;
+    --heading-font: "Playfair Display", serif;
+    --body-font: "Poppins", sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--bg);  /* FIXED */
+    margin: 0;
+    color: var(--text-dark);
+}
+
+/* ===========================
+   NAVIGATION
+   =========================== */
+header {
+    background: var(--white);
+    padding: 15px 0;
+    box-shadow: var(--shadow-soft);
+}
+
+.nav__menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav__link:hover {
+    color: var(--gold);
+}
+
+/* ===========================
+   PAGE TITLES
+   =========================== */
+h1 {
+    font-family: var(--heading-font);
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: var(--text-dark);
+
+    border-bottom: 4px solid var(--gold); /* GOLD UNDERLINE */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* ===========================
+   PRODUCT GRID
+   =========================== */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* ===========================
+   PRODUCT CARDS
+   =========================== */
+.product-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 15px;
+    text-align: center;
+    box-shadow: var(--shadow-soft);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+}
+
+/* ===========================
+   SMALL SQUARE IMAGES
+   =========================== */
+.product-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--radius);
+}
+
+/* ===========================
+   PRODUCT TITLES & PRICES
+   =========================== */
+.product-title {
+    font-family: var(--heading-font);
+    color: var(--gold);
+    font-size: 1.2rem;
+    margin-top: 12px;
+}
+
+.product-price {
+    color: var(--text-dark);
+    font-weight: bold;
+    margin-top: 8px;
+    font-size: 1.1rem;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    background: var(--white);
+}
+/* ===========================
+   HERO (HOME BANNER)
+   =========================== */
+
+/* Make the hero section full-bleed (edge-to-edge) even if your main has padding */
+.hero {
+  /* This trick lets the hero break out of the page padding and span 100vw */
+  margin-inline: calc(50% - 50vw);
+}
+
+/* Ensure the wrapper spans the viewport width */
+.hero__image-wrapper {
+  width: 100vw;
+}
+
+/* Banner image: full width, controlled height, and cropped nicely */
+.hero__img {
+  width: 100%;
+  height: 50vh;        /* adjust banner HEIGHT here (e.g., 40–60vh) */
+  max-height: 60vh;    /* safeguard on very tall screens */
+  object-fit: cover;   /* fills the area and crops excess nicely */
+  display: block;      /* removes inline-image bottom gap */
+}
+
+/* Optional: fine-tune heights at different screen sizes */
+@media (min-width: 768px) {
+  .hero__img {
+    height: 55vh;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__img {
+    height: 60vh;
+  }
+}
+
+/* Prevent any horizontal scroll bars if something overflows */
+html, body {
+  overflow-x: hidden;
+}
+``
+/* General page container (optional but recommended) */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-inline: 16px;
+}
+/* Make embedded maps responsive to avoid horizontal overflow */
+.map iframe {
+  width: 100% !important;
+  height: 450px;
+  border: 0;
+}
