@@ -19,7 +19,8 @@ GitHub Pages
 https://aisha6504.github.io/Sorella_Jewellery/
 
 ## screen shots
-![Homepage]<img src=("Images/Homepage.png")>
+![Homepage Screenshot](Images/Homepage.png)
 ## Author 
 
 Aisha Ahmed _ university Project for module _ CST0400_created on:11th of Feb 2026
+
