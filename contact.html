@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sorella Jewellery | Contact Us</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+<!-- ===================== NAVIGATION ===================== -->
+<header class="header">
+    <nav class="nav">
+        <ul class="nav__menu">
+            <li><a href="index.html" class="nav__link">Home</a></li>
+            <li><a href="product.html" class="nav__link">Products</a></li>
+            <li><a href="contact.html" class="nav__link nav__link--active">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ===================== MAIN ===================== -->
+<main class="main container">
+
+    <section class="hero hero--small">
+        <h1 class="hero__title">Contact Sorella Jewellery</h1>
+        <p class="hero__text">
+            We’d love to hear from you — whether it’s about an order, styling advice, or bespoke requests.
+        </p>
+    </section>
+
+    <!-- Contact grid: info + form -->
+    <section class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-card">
+            <h2>Get in touch</h2>
+            <ul class="contact-list">
+                <li><strong>Email:</strong> <a href="mailto:Aisha.Ahmed644@gmail.com">Aisha.Ahmed644@gmail.com</a></li>
+                <li><strong>Location:</strong> London, UK</li>
+                <li><strong>Instagram:</strong> <a href="#" aria-label="Instagram (coming soon)">@sorella.jewellery</a></li>
+            </ul>
+
+            <div class="hours">
+                <h3>Opening Hours</h3>
+                <table class="hours__table">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Start</th>
+                            <th>End</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Monday</td><td>9:00</td><td>18:00</td></tr>
+                        <tr><td>Tuesday</td><td>9:00</td><td>18:00</td></tr>
+                        <tr><td>Wednesday</td><td>9:00</td><td>14:00</td></tr>
+                        <tr><td>Thursday</td><td>9:00</td><td>14:00</td></tr>
+                        <tr><td>Friday</td><td>9:00</td><td>14:00</td></tr>
+                        <tr><td>Saturday</td><td colspan="2">Closed</td></tr>
+                        <tr><td>Sunday</td><td colspan="2">Closed</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-card">
+            <h2>Send us a message</h2>
+            <form class="contact-form" action="#" method="post" novalidate>
+                <div class="form-row">
+                    <label for="name">Full name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="topic">Topic</label>
+                    <select id="topic" name="topic">
+                        <option value="general">General enquiry</option>
+                        <option value="orders">Orders & shipping</option>
+                        <option value="gifting">Gifting & recommendations</option>
+                        <option value="bespoke">Bespoke requests</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" placeholder="How can we help?" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn--primary">Send message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Map -->
+    <section class="map">
+        <h2>Find Us</h2>
+        <div class="map__frame">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2478.828062341701!2d-0.23191836017424317!3d51.58971450480541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876108b08ac8657%3A0xc6241b957359e27d!2sMiddlesex%20University%20London!5e0!3m2!1sen!2suk!4v1769612294624!5m2!1sen!2suk"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+    <p>&copy; 2026 Data Science with AI. All rights reserved.</p>
+    <a href="mailto:Aisha.Ahmed644@gmail.com">Aisha Ahmed</a>
+</footer>
+
+</body>
+</html>
